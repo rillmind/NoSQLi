@@ -1,0 +1,26 @@
+body {
+    font-family: Jetbrains Mono;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.myalert1 {
+    display: none;
+}
+
+.mywidth {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myh2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
