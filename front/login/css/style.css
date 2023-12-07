@@ -6,6 +6,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     align-items: center;
+    background-color: rgb(255, 253, 242);
 }
 
 .myalert1 {
@@ -25,3 +26,10 @@ body {
     height: 100%;
     text-align: center;
 }
+
+fieldset {
+    border: 1px solid #dbdbdb;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
