@@ -33,12 +33,10 @@ export class AuthService {
     const { username, senha } = postDto;
     const document = await this.userModel.findOne({
       username: username,
+      senha: senha
     });
     if (!document) {
-      throw new NotFoundException('Não encontrado.');
-    }
-    if (document.senha != senha) {
-      throw new UnprocessableEntityException('Senha incorreta!');
+      throw new NotFoundException('Usernae ou senha incorretos.');
     }
     return { id: document._id, username: username };
   }
