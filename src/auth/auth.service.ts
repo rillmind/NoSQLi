@@ -7,6 +7,7 @@ import { Model } from 'mongoose';
 import { User } from './schema/user.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { PostDto } from './dto/post.dto';
+import { error } from 'console';
 
 @Injectable()
 export class AuthService {
@@ -34,7 +35,7 @@ export class AuthService {
       username: username,
     });
     if (!document) {
-      throw new NotFoundException('Usuário não encontrado.');
+      throw new NotFoundException('Não encontrado.');
     }
     if (document.senha != senha) {
       throw new UnprocessableEntityException('Senha incorreta!');

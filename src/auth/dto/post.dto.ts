@@ -6,5 +6,5 @@ export class PostDto {
   readonly username: string;
 
   @IsNotEmpty()
-  readonly senha: string;
+  readonly senha: any;
 }
