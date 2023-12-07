@@ -32,12 +32,12 @@ export class AuthService {
   ): Promise<{ id: any; username: string }> {
     const { username, senha } = postDto;
     const document = await this.userModel.findOne({
-      username: username,
-      senha: senha
+      username: username
     });
     if (!document) {
-      throw new NotFoundException('Usernae ou senha incorretos.');
+      throw new NotFoundException('Not Found.');
     }
+    if (document.senha != senha) throw new UnprocessableEntityException("Senha incorreta!")
     return { id: document._id, username: username };
   }
 }
