@@ -3,11 +3,10 @@ import {
   NotFoundException,
   UnprocessableEntityException,
 } from '@nestjs/common';
-import { Model } from 'mongoose';
 import { User } from './schema/user.schema';
-import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { PostDto } from './dto/post.dto';
-import { error } from 'console';
+import { InjectModel } from '@nestjs/mongoose';
 
 @Injectable()
 export class AuthService {

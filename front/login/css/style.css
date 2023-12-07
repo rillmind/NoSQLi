@@ -12,6 +12,7 @@ body {
 .myalert1 {
     display: none;
     font-size: medium;
+    padding-top: 10px;
 }
 
 .mywidth {
@@ -34,3 +35,8 @@ fieldset {
     border-radius: 10px;
     background-color: #ffffff;
   }
+
+.my-btn {
+    display: flex;
+    align-items: center;
+}
