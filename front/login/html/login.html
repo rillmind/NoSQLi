@@ -15,8 +15,10 @@
 <body>
     <div class="container mt-5">
         <div class="row justify-content-center mywidth">
-            <fieldset class="col-md-7">
-                <h2 class="mb-4">Login</h2>
+            <fieldset class="col-md-9">
+                <div class="my-btn">
+                    <h2 class="mb-4">Login</h2>
+                </div>
                 <form id="loginForm">
                     <div class="mb-3">
                         <label for="username" class="form-label">Username:</label>
@@ -26,8 +28,9 @@
                         <label for="senha" class="form-label">Senha:</label>
                         <input type="password" class="form-control" id="senha" name="senha">
                     </div>
-                    <button type="submit" class="btn btn-dark">Entrar</button>
-                    <br><br>
+                    <div class="my-btn">
+                        <button type="submit" class="btn btn-dark">Entrar</button>
+                    </div> <br>
                     <div id="errorMessage" class="mb-3 alert alert-danger myalert1" role="alert"></div>
                 </form>
             </fieldset>
